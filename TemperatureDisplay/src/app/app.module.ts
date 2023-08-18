@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TemperatureInputComponent } from './temperature-input/temperature-input.component';
+import { TemperatureDisplayComponent } from './temperature-display/temperature-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TemperatureInputComponent
+    TemperatureInputComponent,
+    TemperatureDisplayComponent
   ],
   imports: [
     BrowserModule
