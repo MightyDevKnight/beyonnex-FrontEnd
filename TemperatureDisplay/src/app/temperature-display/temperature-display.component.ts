@@ -15,4 +15,10 @@ export class TemperatureDisplayComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  calculateLinePosition(): any {
+    const percentage = (this.targetTemperature - this.minTemperature) / (this.maxTemperature - this.minTemperature) * 100;
+    const indicatorAngle = (percentage * (315 - 45)) / 100 + 45;
+
+    return `rotate(${indicatorAngle}deg)`;
+  }
 }

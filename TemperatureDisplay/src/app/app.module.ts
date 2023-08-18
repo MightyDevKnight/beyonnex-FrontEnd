@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { TemperatureInputComponent } from './temperature-input/temperature-input.component';
 import { TemperatureDisplayComponent } from './temperature-display/temperature-display.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { TemperatureDisplayComponent } from './temperature-display/temperature-d
     TemperatureDisplayComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,13 @@
 <div>
   <label>Minimum Temperature: </label>
-  <input type="text" [(ngModel)]="minTemperature"/>
+  <input type="number" [(ngModel)]="minTemperature"/>
 </div>
 <div>
   <label>Maximum Temperature: </label>
-  <input type="text" [(ngModel)]="maxTemperature"/>
+  <input type="number" [(ngModel)]="maxTemperature"/>
 </div>
 <div>
   <label>Target Temperature: </label>
-  <input type="text" [(ngModel)]="targetTemperature"/>
+  <input type="number" [(ngModel)]="targetTemperature"/>
 </div>
+<app-temperature-display [minTemperature]="minTemperature" [maxTemperature]="maxTemperature" [targetTemperature]="targetTemperature"></app-temperature-display>

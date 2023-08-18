@@ -1,8 +1,8 @@
 <div class="temperature-indicator">
   <div class="temperature-circle">
-    <div class="temperature-line"></div>
+    <div class="temperature-line" [style.transform] = "calculateLinePosition()"></div>
     <div class="min-line"></div>
     <div class="max-line"></div>
   </div>
-  <div class="temperature-text">{{}}°C</div>
+  <div class="temperature-text">{{ targetTemperature }}°C</div>
 </div>
